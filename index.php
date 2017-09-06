@@ -12,8 +12,12 @@ if($page == 'unstocked'){
 }
 
 // Mysql stuff
-mysql_pconnect( 'localhost', 'ckcollab_food', 'FTQ7P3LwxshbmatH'  );
-mysql_select_db('ckcollab_food');
+$server = $url["host"];
+$username = $url["user"];
+$password = $url["pass"];
+$db = substr($url["path"], 1);
+mysql_pconnect($server, $username, $password);
+mysql_select_db($db);
 
 $result = mysql_query("SELECT category FROM item WHERE stocked = ". $stocked);
 $categories = array();
