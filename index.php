@@ -12,6 +12,8 @@ if($page == 'unstocked'){
 }
 
 // Mysql stuff
+$url = parse_url(getenv("mysqli"));
+
 $server = $url["host"];
 $username = $url["user"];
 $password = $url["pass"];
