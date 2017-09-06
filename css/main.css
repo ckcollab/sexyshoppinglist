@@ -1,0 +1,75 @@
+body {
+    background-color: #cecece;
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+
+@media (max-width: 767px) {
+    body {
+        padding-top: 0;
+		padding-bottom: 100px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+	
+	.navbar-fixed-bottom {
+		padding-left: 20px;
+		position: fixed;
+		bottom: 0;
+	}
+}
+
+.navbar-inverse .brand {
+    color: #E0E0E0;
+}
+
+.food-header {
+    margin-top: 10px;
+}
+
+.food-items .btn {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.food-item img {
+	margin: -5px;
+	margin-top: -7px;
+	margin-right: 1px;
+}
+.food-item .item_name {
+	margin-right: 5px;
+}
+
+.item_name {
+	font-weight: bold;
+}
+
+.btn-primary {
+    color: white;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    background-color: #FF00E4;
+    background-image: -moz-linear-gradient(top, #FF00E4, #690B60);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#FF00E4), to(#690B60));
+    background-image: -webkit-linear-gradient(top, #FF00E4, #690B60);
+    background-image: -o-linear-gradient(top, #FF00E4, #690B60);
+    background-image: linear-gradient(to bottom, #FF00E4, #690B60);
+    background-repeat: repeat-x;
+    border-color: #04C #04C #002A80;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF00E4', endColorstr='#690B60', GradientType=0);
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] {
+    color: white;
+    background-color: #9E0079;
+}
+
+.no-space [class*="span"] {
+    margin-left: 0;
+}
+
+
+.alert {
+	margin-bottom: 1px;
+}
